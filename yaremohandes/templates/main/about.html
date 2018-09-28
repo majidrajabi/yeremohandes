@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static '/css/about.css'%}">
+<header id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h1>درباره ی ما</h1>
+          <p style="font-size:20px;">گروه ما از سال 1395 کار خود را در حوزه ی تدریس نرم افزارهای مهندسی آغاز کرده است.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="py-3">
+    <div style="text-align:center;" class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>ما چه کار می کنیم؟</h1>
+          <p>هر دانشجوی مهندسی بایستی در طول تحصیل خود بر تعدادی موضوع که شامل شبیه سازی های کامپیوتری
+          می باشد، مسلط گردد. گستره ی مطالب در باره ی این نرم افزارهای مهندسی بسیار زیاد می باشد
+        و شاید همین کثرت منابع آموزشی باعث سردرگمی دانشجویان می شود. انتخاب منبع آموزشی مناسب می تواند
+      زمان لازم برای فراگیری یک نرم افزار را کاهش دهد.</p>
+          <p>گروه یارمهندس بر آن می باشد که با به کارگیری روش های آموزشی مناسب زمان و هزینه ی یادگیری نرم افزار مدنظر
+          دانشجویان را کاهش دهد. در این راه با بهره گیری از افراد متخصص در زمینه های مربوط به هر یک راهی هموار
+        برای افراد علاقمند ایجاد کرده است.</p>
+        </div>
+        <div class="col-md-6">
+          <img id="about-img" src="/static/img/13.jpg" alt="" class="about-img img-fluid rounded-circle d-none d-md-block">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="icon-boxes" class="p-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fa fa-building"></i>
+              <h3>همکاری با مراکز آموزشی</h3>
+              گروه یارمهندس آماده همکاری با دانشگاه ها، انجمن های علمی،مراکز آموزشی دولتی و غیردولتی می باشد.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fa fa-bullhorn"></i>
+              <h3>پشتیبانی</h3>
+              دانشپذیران در تمامی طول آموزش خود و حتی بعد از آن از پشتیبانی 24ساعته برخوردار خواهند بود.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fa fa-comments"></i>
+              <h3>رایگانه!</h3>
+              به صورت کاملا رایگان با مشاوران ما ارتباط بگیرید و از راهنمایی های رایگان آن ها استفاده کنید.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fa fa-file-code"></i>
+              <h3>فایل های آماده</h3>
+              می توانید از فایل شبیه سازی های آماده ای که موجود می باشد برای تسریع \روژه خود استفاده کنید.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fa fa-video"></i>
+              <h3>ویدیوی کلاس ها</h3>
+              ویدیوی ضبط شده در طول برگزاری کلاس بعدا در اختیار قرار میگیرد که به عنوان یک منبع می تواند مورد استفاده قرار گیرد.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-danger text-center text-white">
+            <div class="card-body">
+              <i class="fa fa-bug"></i>
+              <h3>کمک در رفع مشکل</h3>
+              حتی اگر پروژه ی خود را پیش برده اید و در میانه ی راه به مشکل برخورده اید می توانید روی ما حساب کنید.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright 2018 &copy; Majid - YareMohandes</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+{% endblock %}

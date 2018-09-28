@@ -1,0 +1,16 @@
+#main-footer{
+  background-color: black;
+  color: white;
+
+}
+
+#page-header{
+  position: relative;
+  height: 200px;
+  background: url('../img/six.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: black;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}

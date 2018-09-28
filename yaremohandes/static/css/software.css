@@ -1,0 +1,17 @@
+#main-footer{
+  background-color: black;
+  color: white;
+
+}
+
+#page-header{
+  position: relative;
+  height: 400px;
+  background: url('../img/eight.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}

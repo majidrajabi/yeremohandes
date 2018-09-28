@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+{% load bootstrap4 %}
+
+<link rel="stylesheet" href="{% static '/css/contact.css'%}">
+<header id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <strong><h1>ارتباط با ما</h1></strong>
+          <strong>با آغوشی باز پذیرای نظرات محترم شما هستیم.</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="contact" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div style="text-align:right" class="col-md-4">
+            <div class="card p-4">
+              <div class="card-body">
+                <h4>ارتباط بگیرید</h4>
+                <h4>آدرس</h4>
+                <p>تهران</p>
+                <h4>ایمیل</h4>
+                <p>YareMohandes.ir@gmail.com</p>
+                <h4>تلفن</h4>
+                <p>09035556589</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card p-4">
+              <div class="card-body">
+                <h3 class="text-center">پیام خود را با پر کردن فرم زیر برای ما ارسال کنید.</h3>
+                <form dir="rtl" style="padding-top: 20px; text-align:center" method="post">
+                  {% csrf_token %}
+                  {% bootstrap_form massage_form%}
+                  <input class="btn btn-primary" type="submit" name="" value="ارسال">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- <div class="container">
+
+</div> -->
+
+    <section id="staff" class="py-5 text-center bg-dark text-white">
+    <div class="container">
+      <h1>تیم ما</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/static/img/ten.jpg" alt="" class="img-fluid rounded-circle mb-2">
+          <h4>بهنام</h4>
+          <small>Marketing Manager</small>
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/nine.jpg" alt="" class="img-fluid rounded-circle mb-2">
+          <h4>محمد</h4>
+          <small>Business Manager</small>
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/eleven.jpg" alt="" class="img-fluid rounded-circle mb-2">
+          <h4>هادی</h4>
+          <small>CEO</small>
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/eight.jpg" alt="" class="img-fluid rounded-circle mb-2">
+          <h4>مجید</h4>
+          <small>Web Developer</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright 2018 &copy; Majid - YareMohandes</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+{% endblock %}

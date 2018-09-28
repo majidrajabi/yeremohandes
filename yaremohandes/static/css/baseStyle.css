@@ -1,0 +1,58 @@
+body{
+  font-family: 'Vazir', sans-serif;
+  direction:rtl;
+}
+
+.navbar{
+  border-bottom: #008ed6 3px solid;
+}
+.nav-link{
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+.nav-item-active{
+  border-left: #444 3px solid;
+}
+
+#home-heading{
+  position: relative;
+  min-height: 300px;
+  background: url('../img/six.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay{
+  position: absolute;
+  background-color:rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.carousel-item{
+  font-family: 'Vazir', sans-serif;
+  height: 450px;
+}
+
+
+.carousel-image-1{
+  background: url('../img/30.jpg');
+  background-size: cover;
+}
+.carousel-image-2{
+  background: url('../img/two.jpg');
+  background-size: cover;
+}
+.carousel-image-3{
+  background: url('../img/31.jpg');
+  background-size: cover;
+}
+
+.fa {
+  font-size: 55px;
+}

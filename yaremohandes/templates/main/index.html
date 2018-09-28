@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+{% load bootstrap4 %}
+<link rel="stylesheet" href="{% static '/css/index.css'%}">
+
+<section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 id="slide_one" class="display-3" style="text-align:center;">حالا شروع به یادگیری کن</h1>
+              <p id="slide_p" class="lead" style="text-align:center;">نرم افزار مورد علاقه ات رو انتخاب کن و در زمان محدود به آن مسط شو!</p>
+              <a href="{% url 'teaching'%}" class="btn btn-danger btn-lg">اطلاعات بیشتر</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">نرم افزارهای مهندسی</h1>
+              <p class="lead">مهندسی بدون شبیه سازی؟ بی معنی.</p>
+              <a href="{% url 'software' %}" class="btn btn-primary btn-lg">لیست نرم افزارها</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block  mb-5" style="bottom:120px;">
+              <h1 class="display-3" style="padding">متدهای آموزشی</h1>
+              <p class="lead">با استفاده از روش های به روز و مناسب در وقت مدرس و دانشپذیر صرفه جویی می شود.</p>
+              <a href="#" class="btn btn-success btn-lg">اطلاعات بیشتر</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <!-- </div> -->
+  </section>
+
+
+  <section id="home-icons" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 text-center">
+        <i class="fa fa-brain mb-2"></i>
+        <h3>یادگیری سریع</h3>
+        <p>وقت خودت رو با گشتن بین داکمنت های طولانی و خسته کننده ی نرم افزارها هدر نده و بهترین راه رو انتخاب کن!</p>
+      </div>
+      <div class="col-md-4 mb-4 text-center">
+        <i class="fa fa-bug mb-2"></i>
+        <h3>کمک در دیباگ </h3>
+        <p>برای همه افراد پیش اومده که تو قسمتی از کار گیر افتاده و ادامه کار مقدور نیست! در این زمینه هم روی ما حساب کن.</p>
+      </div>
+      <div class="col-md-4 mb-4 text-center">
+        <i class="fa fa-cart-plus mb-2"></i>
+        <h3>کسب درآمد</h3>
+        <p>مهارت خودت رو یادبگیر و شروع به پول درآوردن کن!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="home-heading" class="p-5">
+  <div class="dark-overlay">
+    <div class="row">
+      <div class="col">
+        <div class="container pt-5">
+          <h1 style="padding-bottom:20px;">آیا برای شروع آماده هستی؟</h1>
+          <p style="padding-bottom:20px;" class="d-none d-md-block">برای برداشتن اولین قدم خودت رو به ما معرفی کن تا با هم ادامه بدیم. برای این کار کلیک کن!</p>
+          <input  class="btn btn-secondary-lg" type="button" value="ثبت نام">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="text-align:center;" id="info" class="py-3">
+  <div class="container">
+    <div  class="row">
+      <div class="col-md-6 align-self-center">
+        <h3>چشم انداز</h3>
+        <p dir="rtl">یادگیری نرم افزار پروسه ی پیچیده ای نیست به شرطی که قدم های سنجیده ای در راه آموزش آن برداشت. انتخاب مسیر شاید مهمترین
+        پارامتر باشد که اثرات چشمگیری بر روحیه و پشتکار فرد بگذارد. قدم های بعدی نیز بایستی تعریف شود. </p>
+        <a href="#" class="btn btn-outline-danger btn-lg">بیشتر بدانید</a>
+      </div>
+      <div class="col-md-6">
+        <img src="static/img/seven.jpg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="newsletter" class="text-center p-5 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>برای دریافت آخرین اخبار و مقالات از فرم زیر استفاده کنید.</h1>
+
+        <form class="form-inline justify-content-center" method="post">
+          <!-- <label class="sr-only" for="name">نام</label> -->
+          <!-- <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="نام"> -->
+
+          {% csrf_token %}
+          {%bootstrap_form name_form%}
+          <!-- <label class="sr-only" for="email">آدرس ایمیل</label> -->
+          <!-- <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="آدرس ایمیل"> -->
+          <button class="btn btn-primary" type="submit">ارسال</button>
+         </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright 2018 &copy; Majid - YareMohandes</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+{% endblock %}
